@@ -10,9 +10,9 @@ namespace DInjectionandMock
     {
         static void Main(string[] args)
         {
-            IMessageWriter writer = new ConsoleMessageWriter();
-            var salutation = new Salutation(writer);
-            salutation.Exclaim();
+            IDependency idependency = new Dependency();
+            var dependencyIsolation = new DependencyIsolation(idependency);
+            dependencyIsolation.X();
             Console.ReadLine();
 
         }

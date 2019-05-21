@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace DInjectionandMock
 {
-   public interface IMessageWriter
+   public interface IDependency
     {
-        void Write(string message);
+        string JoinUpper(string a, string b);
+        int Meaning { get; }
     }
 }

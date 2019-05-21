@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace DInjectionandMock
 {
-    public class ConsoleMessageWriter: IMessageWriter
+    class EmployeeDependencie
     {
-        public void Write(string message) {
-            Console.WriteLine(message);
-        }
     }
 }
